@@ -2,7 +2,6 @@
 
 Architecture: **Browser (Amplify) → Lambda Function URL → DynamoDB (match lookup + ticket write) → Amazon SES (two emails)**
 
-No Bedrock, no AI calls — this is deterministic category-based routing, so there's nothing to throttle or misconfigure model access for.
 
 ## 1. Create the DynamoDB tables
 
